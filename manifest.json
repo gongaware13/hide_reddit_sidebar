@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Hide Reddit Sidebar",
+  "version": "1.0",
+  "description": "Hides the recommended sidebar on Reddit",
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.reddit.com/*"], 
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
